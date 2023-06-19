@@ -1,0 +1,13 @@
+ldap:
+  uri: 'ldap://ns01.example.com'
+  user: 'CN=puppet,CN=Users,DC=example,DC=com'
+  cred: 'Pa$$word'
+  base_dn: 'OU=00-Unit,DC=example,DC=com'
+rules:
+  folder: '/etc/puppetlabs/code/environments'
+environments:
+  dev:
+    - my-pc.example.com
+  test:
+    - 00-pc-01.example.com
+    - 00-pc-02.example.com
